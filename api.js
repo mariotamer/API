@@ -20,6 +20,11 @@ app.get('/', (req, res) =>{
   res.send('Mario');
 })
 
+app.get('/Students', (req, res) =>{
+  let data = [ {id: 1, name: "Mario"}, {id: 2, name: "Roland"}, {id: 3, name: "Christian"}, {id: 4, name: "Georges"}];
+  res.send(data);
+})
+
 // your code
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
